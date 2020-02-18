@@ -4,4 +4,5 @@ Projects made by Machine Learning models
 1. Use a jupyter notebook to test
 
 2. Use google colab
-    https://colab.research.google.com/notebooks/tensorflow_version.ipynb
+    https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb
+    
