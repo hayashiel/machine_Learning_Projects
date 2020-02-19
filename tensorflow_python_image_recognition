@@ -15,7 +15,7 @@ input_shape = (28,28)
 def create_model(x_train,x_test, y_train, y_test):
     model = tf.keras.models.Sequential([
       tf.keras.layers.Flatten(input_shape=input_shape),
-      tf.keras.layers.Dense(64,activation='relu'),
+      tf.keras.layers.Dense(128,activation='relu'),
       tf.keras.layers.Flatten(),
       tf.keras.layers.Dense(10)
     ])
@@ -30,7 +30,7 @@ def create_model(x_train,x_test, y_train, y_test):
 model = create_model(x_train, x_test, y_train, y_test)
 model.summary()
 img_class = model.predict(x_test[number_indexed].reshape(1,28,28))
-print("Class: ", img_class.argmax())
+print("Prediction: ", img_class.argmax())
 print("Actual: ", y_test[number_indexed])
 plt.imshow(x_test[number_indexed], cmap='Greys')
  
